@@ -412,7 +412,7 @@
         }
         
         .card img {
-            width: 100%;
+            width: 80%;
             height: 200px;
             object-fit: cover;
         }
@@ -731,7 +731,17 @@
 
                 <!-- Item 3 -->
                 <div class="card">
-                    <img src="memory 3.mp4" alt="profile-pic">
+                    <video  width="300" autoplay muted loop>
+                         <button onclick="playWithSound()">Play with Sound</button>
+
+                            <script>
+                                function playWithSound() {
+                                    const vid = document.getElementById("myVideo");
+                                    vid.muted = false;   // aktifkan suara
+                                    vid.play();          // mulai ulang dengan suara
+                                }
+                            </script>
+                    <source src="memory 3.mp4" alt="profile-pic"></video>
                     <div class="card-info">
                         <h4>Personal Portfolio — Bima's Creative Playground</h4>
                         <p>A minimalist personal website built with HTML and CSS, showcasing Bima’s passion for 
@@ -743,7 +753,17 @@
 
                 <!-- Item 2 -->
                 <div class="card">
-                    <img src="memory 4.mp4" alt="profile-pic">
+                    <video  width="300" autoplay muted loop>
+                        <button onclick="playWithSound()">Play with Sound</button>
+
+                            <script>
+                                function playWithSound() {
+                                    const vid = document.getElementById("myVideo");
+                                    vid.muted = false;   // aktifkan suara
+                                    vid.play();          // mulai ulang dengan suara
+                                }
+                            </script>
+                    <source src="memory 4.mp4" alt="profile-pic"></video>
                     <div class="card-info">
                         <h4>Majestic Morning at Mount Bromo</h4>
                         <p>As the first light touches the volcanic peaks of East Java, mist and smoke rise in quiet harmony.
